@@ -1,7 +1,7 @@
 const express = require("express"),
       app = express(),
       NewsAPI = require('newsapi'),
-      newsapi = new NewsAPI('a0e18f58e2fa406b8926f61b09fb6369'),
+      newsapi = new NewsAPI(process.env.API_KEY),
       port = process.env.PORT || 3000;
 
 var path = require('path');
