@@ -1,0 +1,3 @@
+#Ignores below listed Folders and Files from Git repo
+node_modules/
+.env

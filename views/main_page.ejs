@@ -1,0 +1,23 @@
+<%- include ('header.html') %>
+
+        <h4>News on <%= country %></h4>
+    </div>
+</div>
+<div class="container content-container">
+
+<div class='news-container'>
+<% content.forEach(function(data){ %>
+	<div class='card_content'>
+		<div class='card-img-top d-flex justify-content-center'>
+			<img class='news_img' src = <%= data.urlToImage %> >
+		</div>
+		<div class='card-body main_content'>
+			<h5 class='card-title news-content-title text-center'><%= data.description %></h5>
+			<p class="source_name"><strong><%= data.source.name %></strong></p> <a href= <%= data.url %> ><button class="btn btn-warning btn-sm view_more_btn">view more</button></a>
+			<p id="end"></p>
+		</div>
+	</div>
+<% }) %>
+</div>
+
+<%- include ('footer.html') %>
