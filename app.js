@@ -25,6 +25,15 @@ app.get('/:country', function(req, res){
     })
 });
 
+app.get('/:country/:category', function(req, res){
+    newsapi.v2.topHeadlines({
+    country: req.params.country,
+    category: req.params.category
+    }).then(response => {
+        content = response.articles;
+        res.render('main_page', {content : content, country: req.params.country});
+    })
+});
 
 app.listen(port, function(){
 	console.log('News_app server has been started!')

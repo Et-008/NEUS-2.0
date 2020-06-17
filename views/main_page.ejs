@@ -5,6 +5,15 @@
 </div>
 <div class="container content-container">
 
+<ul class="categories">
+	<li><a href="/<%= country %>/business"><button class="category-button">business</button></a></li>
+	<li><a href="/<%= country %>/entertainment"><button class="category-button">entertainment</button></a></li>
+	<li><a href="/<%= country %>/health"><button class="category-button">health</button></a></li>
+	<li><a href="/<%= country %>/sports"><button class="category-button">sports</button></a></li>
+	<li><a href="/<%= country %>/science"><button class="category-button">science</button></a></li>
+	<li><a href="/<%= country %>/technology"><button class="category-button">technology</button></a></li>
+</ul>
+
 <div class='news-container'>
 <% content.forEach(function(data){ %>
 	<div class='card_content'>
