@@ -3,7 +3,6 @@
         <h4>News on <%= country %></h4>
     </div>
 </div>
-<div class="container content-container">
 
 <ul class="categories">
 	<li><a href="/<%= country %>/business"><button class="category-button">business</button></a></li>
@@ -22,7 +21,7 @@
 		</div>
 		<div class='card-body main_content'>
 			<h5 class='card-title news-content-title text-center'><%= data.description %></h5>
-			<p class="source_name"><strong><%= data.source.name %></strong></p> <a href= <%= data.url %> ><button class="btn btn-warning btn-sm view_more_btn">view more</button></a>
+			<p class="source_name"><span><%= data.source.name %></span></p> <a href= <%= data.url %> ><button class="btn btn-warning btn-sm view_more_btn">view more</button></a>
 			<p id="end"></p>
 		</div>
 	</div>
